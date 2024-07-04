@@ -1,7 +1,8 @@
 import supervision as sv
-from exceptions import DocumentNotFoundError
-from settings import VENEZUELA_ID, VENEZUELA_ID_RECOGNITION_MODEL
 from ultralytics import YOLO
+
+from IDFace.exceptions import DocumentNotFoundError
+from IDFace.settings import VENEZUELA_ID, VENEZUELA_ID_RECOGNITION_MODEL
 
 
 class Recognition:

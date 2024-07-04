@@ -2,13 +2,15 @@ import cv2
 import easyocr
 import supervision as sv
 from dateutil import parser
-from exceptions import (
+from ultralytics import YOLO
+
+from IDFace.exceptions import (
     BirthDateNotFoundError,
     IdentificationNotFoundError,
     LastNameNotFoundError,
     NameNotFoundError,
 )
-from settings import (
+from IDFace.settings import (
     BIRTH_DATE,
     CIVIL_STATUS,
     EXPEDITION_DATE,
@@ -19,7 +21,6 @@ from settings import (
     PHOTO,
     VENEZUELA_ID_EXTRACTION_MODEL,
 )
-from ultralytics import YOLO
 
 
 class ExtractInformation:

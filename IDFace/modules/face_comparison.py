@@ -1,5 +1,6 @@
 from deepface import DeepFace
-from exceptions import FaceNotFoundError, FaceNotMatchError
+
+from IDFace.exceptions import FaceNotFoundError, FaceNotMatchError
 
 
 class FaceComparison:

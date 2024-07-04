@@ -1,6 +1,10 @@
 from pathlib import Path
 
-from exceptions import (
+from modules.extract_information import ExtractInformation
+from modules.face_comparison import FaceComparison
+from modules.recognition import Recognition
+
+from .exceptions import (
     BirthDateNotFoundError,
     DocumentNotFoundError,
     FaceNotFoundError,
@@ -9,10 +13,7 @@ from exceptions import (
     LastNameNotFoundError,
     NameNotFoundError,
 )
-from modules.extract_information import ExtractInformation
-from modules.face_comparison import FaceComparison
-from modules.recognition import Recognition
-from settings import (
+from .settings import (
     BIRTH_DATE_NOT_FOUND_ERROR,
     DOCUMENT_NOT_FOUND_ERROR,
     FACE_NOT_FOUND_ERROR,
