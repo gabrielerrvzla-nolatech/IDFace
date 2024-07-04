@@ -1,3 +1,1 @@
-from main import IDFace
-
-__all__ = ["IDFace"]
+from .main import IDFace
