@@ -1,0 +1,6 @@
+ultralytics==8.2.48
+supervision==0.21.0
+easyocr==1.7.1
+deepface==0.0.92
+tf-keras==2.16.0
+python-dateutil==2.9.0.post0
