@@ -1,12 +1,3 @@
-import os
-from pathlib import Path
-
-# DIRECTORIO BASE
-BASE_DIR = Path(__file__).resolve().parent
-
-# ARCHIVOS ESTATICOS
-MODELS_DIR = os.path.join(BASE_DIR, "models")
-
 # CODIGOS DE ERROR
 DOCUMENT_NOT_FOUND_ERROR = "DOCUMENT_NOT_FOUND_ERROR"
 FACE_NOT_FOUND_ERROR = "FACE_NOT_FOUND_ERROR"
@@ -22,9 +13,6 @@ FILE_NOT_FOUND_ERROR = "FILE_NOT_FOUND_ERROR"
 # VENEZUELA
 # # # # # # # # # # # # # # # # # # #
 
-# MODELOS
-VENEZUELA_ID_EXTRACTION_MODEL = os.path.join(MODELS_DIR, "cedula_extraction.pt")
-VENEZUELA_ID_RECOGNITION_MODEL = os.path.join(MODELS_DIR, "cedula_recognition.pt")
 
 # DOCUMENTOS
 VENEZUELA_ID = "cedula_venezuela"

@@ -2,14 +2,14 @@ import supervision as sv
 from ultralytics import YOLO
 
 from IDFace.exceptions import DocumentNotFoundError
-from IDFace.settings import VENEZUELA_ID, VENEZUELA_ID_RECOGNITION_MODEL
+from IDFace.settings import VENEZUELA_ID
 
 
 class Recognition:
 
     def __init__(
         self,
-        recognition_model_path: str = VENEZUELA_ID_RECOGNITION_MODEL,
+        recognition_model_path: str,
         confidence_threshold: float = 0.8,
     ):
         self.confidence_threshold = confidence_threshold

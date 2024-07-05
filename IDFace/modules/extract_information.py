@@ -19,7 +19,6 @@ from IDFace.settings import (
     LAST_NAME,
     NAME,
     PHOTO,
-    VENEZUELA_ID_EXTRACTION_MODEL,
 )
 
 
@@ -27,7 +26,7 @@ class ExtractInformation:
 
     def __init__(
         self,
-        extract_information_model_path: str = VENEZUELA_ID_EXTRACTION_MODEL,
+        extract_information_model_path: str,
         ocr_model_gpu: bool = False,
         ocr_model_lang: str = "es",
         confidence_threshold: float = 0.8,

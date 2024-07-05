@@ -12,8 +12,8 @@ from .settings import (
 
 class FileNotFoundError(Exception):
 
-    def __init__(self, message: str = FILE_NOT_FOUND_ERROR):
-        self.message = message
+    def __init__(self, file_path: str, message: str = FILE_NOT_FOUND_ERROR):
+        self.message = f"{message}: {file_path}"
         super().__init__(self.message)
 
 
